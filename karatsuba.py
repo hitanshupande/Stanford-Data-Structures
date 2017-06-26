@@ -17,10 +17,10 @@ def karatsuba(x, y):
     bd = karatsuba(b, d)
     thirdTerm = karatsuba((a + b), (c + d))
 
-    #Final calculation
+   #Final calculation
     return (ac * 10**(size*2) +  (thirdTerm - ac - bd)* 10**(size) + bd)
 
-print(karatsuba(120, 120))
+print(karatsuba(39, 27))
 
 
 
